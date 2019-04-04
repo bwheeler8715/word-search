@@ -1,0 +1,45 @@
+##### project specific stuff #####
+
+##### os ignores #####
+# mac
+.DS_Store
+
+##### ide ignores #####
+# eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# intellij
+.idea/
+*.iml
+*.iws
+out/
+
+##### java ignores #####
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+##### maven ignores #####
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
