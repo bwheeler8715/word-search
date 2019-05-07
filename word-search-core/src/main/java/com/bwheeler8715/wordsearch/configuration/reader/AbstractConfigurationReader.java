@@ -47,7 +47,7 @@ public abstract class AbstractConfigurationReader implements ConfigurationReader
 
         WordValidator validator = WordValidatorSingleton.getWordValidator();
         if (!this.words.stream().allMatch(validator::validateWord)) {
-            errors.add("The word list contains banned word.");
+            errors.add("The word list contains a banned word.");
         }
 
         if (!errors.isEmpty()) {

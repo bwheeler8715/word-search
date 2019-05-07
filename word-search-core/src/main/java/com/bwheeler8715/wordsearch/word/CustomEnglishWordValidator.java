@@ -66,7 +66,6 @@ public class CustomEnglishWordValidator extends AbstractEnglishWordValidator {
             return false;
         }
         word = removeLeetSpeak(word);
-
-        return BANNEDWORDS.contains(word) || BANNEDLIKEWORDS.stream().anyMatch(word::contains);
+        return !BANNEDWORDS.contains(word) && BANNEDLIKEWORDS.stream().noneMatch(word::contains);
     }
 }
